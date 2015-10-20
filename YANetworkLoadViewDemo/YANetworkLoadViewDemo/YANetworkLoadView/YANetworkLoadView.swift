@@ -45,6 +45,7 @@ protocol YANetworkLoadViewDelegate: NSObjectProtocol{
         contView.frame = bounds
         contView.autoresizingMask = [UIViewAutoresizing.FlexibleWidth,UIViewAutoresizing.FlexibleHeight]
         self.addSubview(contView)
+        self.backgroundColor = UIColor.clearColor()
         showLoadingView()
     }
     func initFromXIB() -> UIView {

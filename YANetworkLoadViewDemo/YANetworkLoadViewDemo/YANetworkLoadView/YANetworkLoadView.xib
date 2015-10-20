@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YANetworkLoadView" customModule="Art998Collection" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YANetworkLoadView" customModule="YANetworkLoadViewDemo" customModuleProvider="target">
             <connections>
                 <outlet property="activityIndicatorView" destination="xrd-O6-Jug" id="bJr-Ty-G2k"/>
                 <outlet property="contView" destination="p3g-1o-bXl" id="Qnq-RL-Gmg"/>
@@ -32,7 +32,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p5d-9e-fMQ" userLabel="LoadingView">
                     <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xrd-O6-Jug" customClass="YAActivityIndicator" customModule="Art998Collection" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xrd-O6-Jug" customClass="YAActivityIndicator" customModule="YANetworkLoadViewDemo" customModuleProvider="target">
                             <rect key="frame" x="122" y="95" width="56" height="56"/>
                             <animations/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

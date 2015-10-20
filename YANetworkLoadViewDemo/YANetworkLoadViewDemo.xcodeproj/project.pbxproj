@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5027DB2D1BD61036000F90A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027DB2C1BD61036000F90A3 /* AppDelegate.swift */; };
+		5027DB2F1BD61036000F90A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027DB2E1BD61036000F90A3 /* ViewController.swift */; };
+		5027DB321BD61036000F90A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5027DB301BD61036000F90A3 /* Main.storyboard */; };
+		5027DB341BD61036000F90A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5027DB331BD61036000F90A3 /* Assets.xcassets */; };
+		5027DB371BD61036000F90A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5027DB351BD61036000F90A3 /* LaunchScreen.storyboard */; };
+		5027DB431BD6104B000F90A3 /* refresh_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5027DB3F1BD6104B000F90A3 /* refresh_button@2x.png */; settings = {ASSET_TAGS = (); }; };
+		5027DB441BD6104B000F90A3 /* YAActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027DB401BD6104B000F90A3 /* YAActivityIndicator.swift */; settings = {ASSET_TAGS = (); }; };
+		5027DB451BD6104B000F90A3 /* YANetworkLoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027DB411BD6104B000F90A3 /* YANetworkLoadView.swift */; settings = {ASSET_TAGS = (); }; };
+		5027DB461BD6104B000F90A3 /* YANetworkLoadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5027DB421BD6104B000F90A3 /* YANetworkLoadView.xib */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5027DB291BD61036000F90A3 /* YANetworkLoadViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YANetworkLoadViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5027DB2C1BD61036000F90A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5027DB2E1BD61036000F90A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5027DB311BD61036000F90A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5027DB331BD61036000F90A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5027DB361BD61036000F90A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5027DB381BD61036000F90A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5027DB3F1BD6104B000F90A3 /* refresh_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refresh_button@2x.png"; sourceTree = "<group>"; };
+		5027DB401BD6104B000F90A3 /* YAActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAActivityIndicator.swift; sourceTree = "<group>"; };
+		5027DB411BD6104B000F90A3 /* YANetworkLoadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YANetworkLoadView.swift; sourceTree = "<group>"; };
+		5027DB421BD6104B000F90A3 /* YANetworkLoadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YANetworkLoadView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5027DB261BD61036000F90A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5027DB201BD61036000F90A3 = {
+			isa = PBXGroup;
+			children = (
+				5027DB2B1BD61036000F90A3 /* YANetworkLoadViewDemo */,
+				5027DB2A1BD61036000F90A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5027DB2A1BD61036000F90A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5027DB291BD61036000F90A3 /* YANetworkLoadViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5027DB2B1BD61036000F90A3 /* YANetworkLoadViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5027DB3E1BD6104B000F90A3 /* YANetworkLoadView */,
+				5027DB2C1BD61036000F90A3 /* AppDelegate.swift */,
+				5027DB2E1BD61036000F90A3 /* ViewController.swift */,
+				5027DB301BD61036000F90A3 /* Main.storyboard */,
+				5027DB331BD61036000F90A3 /* Assets.xcassets */,
+				5027DB351BD61036000F90A3 /* LaunchScreen.storyboard */,
+				5027DB381BD61036000F90A3 /* Info.plist */,
+			);
+			path = YANetworkLoadViewDemo;
+			sourceTree = "<group>";
+		};
+		5027DB3E1BD6104B000F90A3 /* YANetworkLoadView */ = {
+			isa = PBXGroup;
+			children = (
+				5027DB3F1BD6104B000F90A3 /* refresh_button@2x.png */,
+				5027DB401BD6104B000F90A3 /* YAActivityIndicator.swift */,
+				5027DB411BD6104B000F90A3 /* YANetworkLoadView.swift */,
+				5027DB421BD6104B000F90A3 /* YANetworkLoadView.xib */,
+			);
+			path = YANetworkLoadView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5027DB281BD61036000F90A3 /* YANetworkLoadViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5027DB3B1BD61036000F90A3 /* Build configuration list for PBXNativeTarget "YANetworkLoadViewDemo" */;
+			buildPhases = (
+				5027DB251BD61036000F90A3 /* Sources */,
+				5027DB261BD61036000F90A3 /* Frameworks */,
+				5027DB271BD61036000F90A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YANetworkLoadViewDemo;
+			productName = YANetworkLoadViewDemo;
+			productReference = 5027DB291BD61036000F90A3 /* YANetworkLoadViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5027DB211BD61036000F90A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Yasin;
+				TargetAttributes = {
+					5027DB281BD61036000F90A3 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 5027DB241BD61036000F90A3 /* Build configuration list for PBXProject "YANetworkLoadViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5027DB201BD61036000F90A3;
+			productRefGroup = 5027DB2A1BD61036000F90A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5027DB281BD61036000F90A3 /* YANetworkLoadViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5027DB271BD61036000F90A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5027DB461BD6104B000F90A3 /* YANetworkLoadView.xib in Resources */,
+				5027DB431BD6104B000F90A3 /* refresh_button@2x.png in Resources */,
+				5027DB371BD61036000F90A3 /* LaunchScreen.storyboard in Resources */,
+				5027DB341BD61036000F90A3 /* Assets.xcassets in Resources */,
+				5027DB321BD61036000F90A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5027DB251BD61036000F90A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5027DB441BD6104B000F90A3 /* YAActivityIndicator.swift in Sources */,
+				5027DB451BD6104B000F90A3 /* YANetworkLoadView.swift in Sources */,
+				5027DB2F1BD61036000F90A3 /* ViewController.swift in Sources */,
+				5027DB2D1BD61036000F90A3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5027DB301BD61036000F90A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5027DB311BD61036000F90A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5027DB351BD61036000F90A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5027DB361BD61036000F90A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5027DB391BD61036000F90A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5027DB3A1BD61036000F90A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5027DB3C1BD61036000F90A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YANetworkLoadViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Yasin.YANetworkLoadViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5027DB3D1BD61036000F90A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YANetworkLoadViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Yasin.YANetworkLoadViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5027DB241BD61036000F90A3 /* Build configuration list for PBXProject "YANetworkLoadViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5027DB391BD61036000F90A3 /* Debug */,
+				5027DB3A1BD61036000F90A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5027DB3B1BD61036000F90A3 /* Build configuration list for PBXNativeTarget "YANetworkLoadViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5027DB3C1BD61036000F90A3 /* Debug */,
+				5027DB3D1BD61036000F90A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5027DB211BD61036000F90A3 /* Project object */;
+}

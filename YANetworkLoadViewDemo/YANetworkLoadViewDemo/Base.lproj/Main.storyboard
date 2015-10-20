@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YANetworkLoadViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="20151013115148184" translatesAutoresizingMaskIntoConstraints="NO" id="vQy-94-dg9">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZiR-EL-wTT" customClass="YANetworkLoadView" customModule="YANetworkLoadViewDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vQy-94-dg9" secondAttribute="bottom" id="Jc0-xQ-yQK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZiR-EL-wTT" secondAttribute="bottom" id="PX1-Gb-Rdi"/>
+                            <constraint firstItem="vQy-94-dg9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RvA-pt-SVw"/>
+                            <constraint firstAttribute="trailing" secondItem="vQy-94-dg9" secondAttribute="trailing" id="T6i-eM-UkA"/>
+                            <constraint firstItem="ZiR-EL-wTT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Zgm-qr-3dx"/>
+                            <constraint firstAttribute="trailing" secondItem="ZiR-EL-wTT" secondAttribute="trailing" id="bbi-92-Yzd"/>
+                            <constraint firstItem="ZiR-EL-wTT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cbD-Au-Fvr"/>
+                            <constraint firstItem="vQy-94-dg9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="o0f-HX-1Gb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="networkLoadView" destination="ZiR-EL-wTT" id="0aT-eq-z8v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="418"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="20151013115148184" width="640" height="960"/>
+    </resources>
+</document>
