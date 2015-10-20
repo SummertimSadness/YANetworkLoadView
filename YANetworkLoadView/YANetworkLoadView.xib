@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YANetworkLoadView" customModule="TestDemoPark" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicatorView" destination="xrd-O6-Jug" id="bJr-Ty-G2k"/>
+                <outlet property="contView" destination="p3g-1o-bXl" id="Qnq-RL-Gmg"/>
+                <outlet property="errorLabel" destination="7qR-d4-DIp" id="BRM-zW-wRY"/>
+                <outlet property="errorView" destination="Nan-P1-NLz" id="9Zs-dF-Q61"/>
+                <outlet property="loadingView" destination="p5d-9e-fMQ" id="CgE-Nc-gx0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="p3g-1o-bXl">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3P9-Rr-YsH">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zBY-mT-2Ze">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                    </view>
+                    <animations/>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p5d-9e-fMQ" userLabel="LoadingView">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xrd-O6-Jug" customClass="YAActivityIndicator" customModule="TestDemoPark" customModuleProvider="target">
+                            <rect key="frame" x="123" y="96" width="56" height="56"/>
+                            <animations/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="VbP-aN-LRH"/>
+                                <constraint firstAttribute="width" constant="56" id="ZAa-B3-pse"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="加载中..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLW-ci-JLx" userLabel="Loading Label">
+                            <rect key="frame" x="122" y="160" width="58" height="18"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                            <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="yLW-ci-JLx" secondAttribute="centerX" id="AvV-qZ-Wn0"/>
+                        <constraint firstAttribute="centerY" secondItem="xrd-O6-Jug" secondAttribute="centerY" constant="27" id="VTA-2O-LR0"/>
+                        <constraint firstAttribute="centerX" secondItem="xrd-O6-Jug" secondAttribute="centerX" id="ZDY-tu-ex4"/>
+                        <constraint firstItem="yLW-ci-JLx" firstAttribute="top" secondItem="xrd-O6-Jug" secondAttribute="bottom" constant="8" id="puI-o1-ypQ"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nan-P1-NLz" userLabel="ErrorView">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVF-sD-6IW" userLabel="RefreshButton">
+                            <rect key="frame" x="126" y="100" width="50" height="48"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="ra2-fj-wua"/>
+                                <constraint firstAttribute="width" constant="50" id="wNH-w7-FMl"/>
+                            </constraints>
+                            <state key="normal" image="refresh_button">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="retryRequest:" destination="-1" eventType="touchUpInside" id="wRF-Cy-OqE"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="网络失败，请重试" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qR-d4-DIp" userLabel="Error Label">
+                            <rect key="frame" x="31" y="160" width="240" height="18"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="240" id="1YL-3G-cuM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                            <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="rVF-sD-6IW" secondAttribute="centerX" id="TiI-Xs-nDl"/>
+                        <constraint firstAttribute="centerX" secondItem="7qR-d4-DIp" secondAttribute="centerX" id="Ybb-c1-Rhr"/>
+                        <constraint firstAttribute="centerY" secondItem="rVF-sD-6IW" secondAttribute="centerY" constant="27" id="dtq-qc-Zur"/>
+                        <constraint firstItem="7qR-d4-DIp" firstAttribute="top" secondItem="rVF-sD-6IW" secondAttribute="bottom" constant="12" id="wnX-Jq-L5g"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="p5d-9e-fMQ" secondAttribute="trailing" id="1D3-p8-8v4"/>
+                <constraint firstItem="Nan-P1-NLz" firstAttribute="leading" secondItem="p3g-1o-bXl" secondAttribute="leading" id="1QC-Ck-B9K"/>
+                <constraint firstAttribute="bottom" secondItem="p5d-9e-fMQ" secondAttribute="bottom" id="3ec-fZ-UKu"/>
+                <constraint firstItem="p5d-9e-fMQ" firstAttribute="top" secondItem="Nan-P1-NLz" secondAttribute="top" id="9x9-Sn-WKr"/>
+                <constraint firstItem="3P9-Rr-YsH" firstAttribute="top" secondItem="p3g-1o-bXl" secondAttribute="top" id="GIx-kS-To1"/>
+                <constraint firstItem="p5d-9e-fMQ" firstAttribute="top" secondItem="p3g-1o-bXl" secondAttribute="top" id="MpN-k3-KWc"/>
+                <constraint firstItem="Nan-P1-NLz" firstAttribute="top" secondItem="p3g-1o-bXl" secondAttribute="top" id="NVZ-YC-yZe"/>
+                <constraint firstItem="p5d-9e-fMQ" firstAttribute="leading" secondItem="p3g-1o-bXl" secondAttribute="leading" id="UQo-cx-IWs"/>
+                <constraint firstItem="3P9-Rr-YsH" firstAttribute="leading" secondItem="p3g-1o-bXl" secondAttribute="leading" id="WRd-Lu-Y3d"/>
+                <constraint firstAttribute="trailing" secondItem="3P9-Rr-YsH" secondAttribute="trailing" id="XVg-El-K4o"/>
+                <constraint firstItem="p5d-9e-fMQ" firstAttribute="bottom" secondItem="Nan-P1-NLz" secondAttribute="bottom" id="Zia-H5-jMN"/>
+                <constraint firstAttribute="bottom" secondItem="3P9-Rr-YsH" secondAttribute="bottom" id="ciN-MR-xpx"/>
+                <constraint firstAttribute="trailing" secondItem="Nan-P1-NLz" secondAttribute="trailing" id="eh0-pL-1bW"/>
+                <constraint firstAttribute="bottom" secondItem="Nan-P1-NLz" secondAttribute="bottom" id="lxA-Uv-o8p"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="9x9-Sn-WKr"/>
+                    <exclude reference="Zia-H5-jMN"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="456.5" y="275.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="refresh_button" width="160" height="48"/>
+    </resources>
+</document>
